@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/protected/modules/breakingnews" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/protected/modules/mostactiveusers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/protected/runtime/updater/backups/static_1551089922/js/pagedown" vcs="hg4idea" />
+    <mapping directory="$PROJECT_DIR$/protected/runtime/updater/backups/static_1551090023/js/pagedown" vcs="hg4idea" />
+    <mapping directory="$PROJECT_DIR$/protected/runtime/updater/backups/static_1551970928/js/pagedown" vcs="hg4idea" />
+    <mapping directory="$PROJECT_DIR$/protected/runtime/updater/backups/static_1556631212/js/pagedown" vcs="hg4idea" />
+    <mapping directory="$PROJECT_DIR$/static/js/pagedown" vcs="hg4idea" />
+  </component>
+</project>

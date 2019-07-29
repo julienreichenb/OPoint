@@ -1,0 +1,50 @@
+a:2:{i:0;a:88:{s:15:"oembedProviders";s:459:"{"vimeo.com":"http://vimeo.com/api/oembed.json?scheme=https&url=%url%&format=json&maxwidth=450","youtu.be":"http://www.youtube.com/oembed?scheme=https&url=%url%&format=json&maxwidth=450","soundcloud.com":"https://soundcloud.com/oembed?url=%url%&format=json&maxwidth=450","slideshare.net":"https://www.slideshare.net/api/oembed/2?url=%url%&format=json&maxwidth=450","youtube.com":"http://www.youtube.com/oembed?scheme=https&url=%url%&format=json&maxwidth=450"}";s:4:"name";s:7:"O-Point";s:7:"baseUrl";s:18:"https://o-point.ch";s:14:"paginationSize";s:2:"10";s:17:"displayNameFormat";s:38:"{profile.firstname} {profile.lastname}";s:22:"horImageScrollOnMobile";s:1:"1";s:16:"cronLastDailyRun";s:10:"1555948810";s:20:"mailer.transportType";s:3:"php";s:25:"mailer.systemEmailAddress";s:17:"o-point@iatlab.ch";s:22:"mailer.systemEmailName";s:7:"o-point";s:11:"cache.class";s:21:"yii\caching\FileCache";s:16:"cache.expireTime";s:4:"3600";s:15:"defaultLanguage";s:2:"fr";s:11:"cronLastRun";s:10:"1555988411";s:7:"useCase";s:9:"community";s:7:"noUsers";s:15:"mostactiveusers";s:6:"secret";s:36:"15c9d9b0-2315-4bae-a918-60d253a03311";s:8:"timeZone";s:13:"Europe/Zurich";s:15:"mailer.hostname";s:0:"";s:15:"mailer.username";s:0:"";s:15:"mailer.password";s:0:"";s:11:"mailer.port";s:0:"";s:17:"mailer.encryption";s:0:"";s:27:"mailer.allowSelfSignedCerts";s:1:"0";s:5:"theme";s:78:"/home/clients/c730f9014716325c4636de1b1d783753/web/opoint/themes/Theme-o-point";s:17:"cronLastHourlyRun";s:10:"1555987505";s:16:"trackingHtmlCode";s:2108:"<script>
+// Si pas de menu user (si pas connecté)
+if($('#topbar-first .topbar-actions ul.nav').length == 0) {
+	// On cache les 4 premiers li du menu top
+	$('#top-menu-nav > li:nth-child(-n+4)').remove();
+        // Et on cache encore le menu Premier pas
+	$('#top-menu-nav > li:nth-child(2)').remove();
+    // Et le sous menu
+    $('#top-menu-nav > li.visible-xs li:nth-child(-n+4)').remove();
+    // Et on cache encore le menu Premier pas
+    $('#top-menu-nav > li.visible-xs li:nth-child(2)').remove();
+} else {
+    // autrement (si connecté)
+    // on cache l'avant dernier li (accueil) et le 3eme (annuaire)
+    $('#top-menu-nav > li:nth-child(6):not(.dropdown)').remove();
+    $('#top-menu-nav > li:nth-child(3):not(.dropdown)').remove();
+    // Et le sous menu
+    $('#top-menu-nav > li.visible-xs li:nth-child(5)').remove();
+    $('#top-menu-nav > li.visible-xs li:nth-child(2)').remove();
+}
+
+// Si connecté, on change la page d'accueil
+if($('.topbar-actions.pull-right li.account').length > 0) {
+    var dashboardLink = $('a.dashboard').first();
+    var logoLink = $('a.navbar-brand');
+    logoLink.attr('href', dashboardLink.attr('href'));
+    //setTimeout(function(){ dashboardLink.click(); }, 50);
+}
+
+// Si clique sur lien avec .opoint-login, on clique sur le btn login
+$('a.opoint-login').click(function(){
+    $('a[data-action-click="ui.modal.load"]').click();
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134509062-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134509062-1');
+
+// Track HumHub ajax pages loads
+$(document).on('pjax:end', function() {
+console.log(window.location.pathname+window.location.search);
+    gtag('config', 'GA_TRACKING_ID', {'page_path': window.location.pathname+window.location.search});
+});
+</script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfqGYwUAAAAAIzklhhx3d8SnvK-XwiZluVlksed"></script>";s:12:"themeParents";s:2:"[]";s:31:"theme.var.Theme-o-point.default";s:7:"#ededed";s:31:"theme.var.Theme-o-point.primary";s:7:"#708fa0";s:28:"theme.var.Theme-o-point.info";s:7:"#6fdbe8";s:31:"theme.var.Theme-o-point.success";s:7:"#97d271";s:31:"theme.var.Theme-o-point.warning";s:7:"#fdd198";s:30:"theme.var.Theme-o-point.danger";s:7:"#ff8989";s:39:"theme.var.Theme-o-point.text-color-main";s:4:"#777";s:44:"theme.var.Theme-o-point.text-color-secondary";s:7:"#7a7a7a";s:44:"theme.var.Theme-o-point.text-color-highlight";s:4:"#555";s:39:"theme.var.Theme-o-point.text-color-soft";s:7:"#bebebe";s:40:"theme.var.Theme-o-point.text-color-soft2";s:7:"#aeaeae";s:40:"theme.var.Theme-o-point.text-color-soft3";s:7:"#bac2c7";s:43:"theme.var.Theme-o-point.text-color-contrast";s:4:"#fff";s:45:"theme.var.Theme-o-point.background-color-main";s:4:"#fff";s:50:"theme.var.Theme-o-point.background-color-secondary";s:7:"#f7f7f7";s:45:"theme.var.Theme-o-point.background-color-page";s:7:"#ededed";s:50:"theme.var.Theme-o-point.background-color-highlight";s:7:"#fff8e0";s:35:"theme.var.Theme-o-point.background3";s:7:"#d7d7d7";s:35:"theme.var.Theme-o-point.background4";s:7:"#b2b2b2";s:48:"theme.var.Theme-o-point.background-color-success";s:7:"#f7fbf4";s:42:"theme.var.Theme-o-point.text-color-success";s:7:"#84be5e";s:44:"theme.var.Theme-o-point.border-color-success";s:7:"#97d271";s:48:"theme.var.Theme-o-point.background-color-warning";s:7:"#fffbf7";s:42:"theme.var.Theme-o-point.text-color-warning";s:7:"#e9b168";s:44:"theme.var.Theme-o-point.border-color-warning";s:7:"#fdd198";s:47:"theme.var.Theme-o-point.background-color-danger";s:7:"#fff6f6";s:41:"theme.var.Theme-o-point.text-color-danger";s:8:" #ff8989";s:43:"theme.var.Theme-o-point.border-color-danger";s:7:"#ff8989";s:37:"theme.var.Theme-o-point.mail-font-url";s:66:"'http://fonts.googleapis.com/css?family=Open+Sans:300,100,400,600'";s:40:"theme.var.Theme-o-point.mail-font-family";s:45:"'Open Sans,Arial,Tahoma,Helvetica,sans-serif'";s:24:"theme.var.HumHub.default";s:7:"#ededed";s:24:"theme.var.HumHub.primary";s:7:"#708fa0";s:21:"theme.var.HumHub.info";s:7:"#6fdbe8";s:24:"theme.var.HumHub.success";s:7:"#97d271";s:24:"theme.var.HumHub.warning";s:7:"#fdd198";s:23:"theme.var.HumHub.danger";s:7:"#ff8989";s:32:"theme.var.HumHub.text-color-main";s:4:"#777";s:37:"theme.var.HumHub.text-color-secondary";s:7:"#7a7a7a";s:37:"theme.var.HumHub.text-color-highlight";s:4:"#555";s:32:"theme.var.HumHub.text-color-soft";s:7:"#bebebe";s:33:"theme.var.HumHub.text-color-soft2";s:7:"#aeaeae";s:33:"theme.var.HumHub.text-color-soft3";s:7:"#bac2c7";s:36:"theme.var.HumHub.text-color-contrast";s:4:"#fff";s:38:"theme.var.HumHub.background-color-main";s:4:"#fff";s:43:"theme.var.HumHub.background-color-secondary";s:7:"#f7f7f7";s:38:"theme.var.HumHub.background-color-page";s:7:"#ededed";s:43:"theme.var.HumHub.background-color-highlight";s:7:"#fff8e0";s:28:"theme.var.HumHub.background3";s:7:"#d7d7d7";s:28:"theme.var.HumHub.background4";s:7:"#b2b2b2";s:41:"theme.var.HumHub.background-color-success";s:7:"#f7fbf4";s:35:"theme.var.HumHub.text-color-success";s:7:"#84be5e";s:37:"theme.var.HumHub.border-color-success";s:7:"#97d271";s:41:"theme.var.HumHub.background-color-warning";s:7:"#fffbf7";s:35:"theme.var.HumHub.text-color-warning";s:7:"#e9b168";s:37:"theme.var.HumHub.border-color-warning";s:7:"#fdd198";s:40:"theme.var.HumHub.background-color-danger";s:7:"#fff6f6";s:34:"theme.var.HumHub.text-color-danger";s:8:" #ff8989";s:36:"theme.var.HumHub.border-color-danger";s:7:"#ff8989";s:30:"theme.var.HumHub.mail-font-url";s:66:"'http://fonts.googleapis.com/css?family=Open+Sans:300,100,400,600'";s:33:"theme.var.HumHub.mail-font-family";s:45:"'Open Sans,Arial,Tahoma,Helvetica,sans-serif'";}i:1;N;}

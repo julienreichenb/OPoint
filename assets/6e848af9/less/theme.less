@@ -1,0 +1,416 @@
+/**
+ * Define or overwrite your theme selectors within this file.
+**/
+// CSS pour O-Point
+
+/* Default */
+.colorDefault {
+  color: #e6edfb;
+}
+.backgroundDefault {
+  background: #e6edfb;
+}
+.borderDefault {
+  border-color: #e6edfb;
+}
+/*-----------------*/
+
+#topbar-first {
+  background-color: #08689c;
+  top: 0;
+  z-index: 1030;
+  color: white;
+ }
+ #topbar-first .btn-group > a {
+    background-color: #08689c;
+}
+
+ #topbar-first .dropdown.account > a, #topbar-first .dropdown.account.open > a, #topbar-first .dropdown.account > a:hover, #topbar-first .dropdown.account.open > a:hover {
+    background-color: #08689c;
+}
+
+#topbar-second .nav > li > a:hover, #topbar-second .nav .open > a, #topbar-second .nav > li.active {
+    border-bottom: 3px solid #08689c;
+//   background-color: #f7f7f7;
+//    color: #555;
+}
+.tab-menu .nav-tabs li.active > a, .tab-menu .nav-tabs li.active > a:hover {
+ //   padding-top: 10px;
+    border-top: 3px solid #08689c;
+}
+
+a.list-group-item:hover, a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+//    z-index: 2;
+//    color: #555;
+//    background-color: #f7f7f7;
+    border-left: 3px solid #08689c !important;
+}
+
+body {
+	background-color: #e6edfb;
+}
+
+@media (min-width: 1400px) {
+	.container {
+		width: 1370px;
+	}
+}
+@media (min-width: 1900px) {
+	.container {
+		width: 1870px;
+	}
+}
+
+.login-container {
+    background-color: #e6edfb;
+    background-image: linear-gradient(rgba(8, 104, 156, 0.5), rgba(230, 237, 250, 0.5)), url(../img/O-Point-Banner.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center
+
+ //  background-image: linear-gradient(to right, #708fa0 0%, #8fa7b4 50%, #8fa7b4 100%), linear-gradient(to right, #7f9baa 0%, #bdcbd3 51%, #adbfc9 100%), url(../img/handicap_love-fond_01.jpg);
+ //   background-size: 100% 100%;
+ //   position: relative;
+ //   padding-top: 40px;
+ 
+ }
+ html, body {
+ 	min-height: 100%
+ 	
+ }
+
+ .btn-info {
+    background: #08689c;
+    color: #fff !important;
+}
+.btn-info:hover, .btn-info:focus {
+    background: #044568 !important;
+    text-decoration: none;
+}
+
+//formulaire de contact
+
+.form_contact{
+		width: 40%;
+		margin: auto;
+		
+
+}
+.form_contact input {
+		display: block;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		padding: 5px;
+		width: 100%;
+}
+.form_contact textarea {
+		display: block;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		padding: 5px;
+		height: 200px;
+		width: 100%;
+
+}
+
+.form_contact input[type=submit] {
+		background-color: #08689c;
+		color: white;
+		width: auto;
+
+}
+.form_contact .half {
+		display: block;
+		float: left;
+		width: 49%;
+		box-sizing: border-box;
+}
+
+.form_contact .half:nth-child(even) {
+		margin-left: 2%;
+}
+
+@media screen and (max-width: 800px) {
+  .form_contact {
+    	width: 100%;
+
+  }
+    #flex-container-2{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	//align-items: center;
+	margin-top: 40px;
+	//height: 600px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+  .form_contact .half {
+    	width: 100%;
+    	margin-left: 0;
+  }
+  #flex-container-2{
+  	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	//align-items: center;
+	margin-top: 40px;
+	//height: 600px;
+   }
+}
+
+.form_contact h1 {
+		font-size: 25px;
+		font-weight: bold;
+		
+		margin: 10px;	
+}
+
+
+.labelmail {
+		margin-top: 30px;
+}
+
+// page d'accueil
+
+.titre {
+		background-color: #e6edfb;
+		margin-bottom: 10px;
+		display: inline-block;
+		width: 100%;
+		color: #08689c;
+		text-align: center;
+		font-size: 45px;
+		font-weight: bold;
+}
+
+.sous-titre {
+		background-color: #e6edfb;
+		margin-top: 40px;
+		display: inline-block;
+		width: 100%;
+		color: #08689c;
+		//text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+}
+.logo-accueil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#flex-container-1{
+	background-image: linear-gradient(rgba(8, 104, 156, 0.5), rgba(230, 237, 250, 0.5)), url(../img/O-Point-Banner.png);
+	background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+}
+// #flex-container-1 > div {
+//	width: 100px;
+//	height: 300px;
+//}
+
+#flex-items-1 {
+	background-color: rgba(8, 104, 156, 0.8);
+	border-radius: 200px;
+	border: 2px solid rgba(230, 237, 251, 1);
+	width: 878px;
+	height: 364px;
+
+}
+
+#flex-container-2{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	//align-items: center;
+	margin-top: 40px;
+	//height: 600px;
+}
+#flex-items-2 {
+	background-color: rgba(230, 237, 251, 1);
+	//width: 400px;
+	height: 250px;
+	padding:10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #08689c;
+
+}
+
+#flex-items-3 {
+	background-color: rgba(8, 104, 156, 1);
+	//width: 400px;
+	height: 250px;
+	padding:10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #e6edfb;
+
+
+}
+
+#flex-items-3 > p {
+	font-size: 25px;
+	color: #e6edfb;
+	font-weight: bold;
+
+}
+
+
+#flex-items-2 > p {
+	font-size: 25px;
+	color: #08689c;
+	font-weight: bold;
+
+}
+
+#flex-container-3{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	//align-items: center;
+	margin-top: 40px;
+	//height: 600px;
+}
+
+#flex-items-4 {
+	//background-color: rgba(8, 104, 156, 1);
+	//width: 400px;
+	height: 83px;
+	padding:10px;
+	margin-right: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #e6edfb;
+
+
+}
+
+#flex-items-5 {
+	background-color: rgba(230, 237, 251, 1);
+	//width: 400px;
+	height: 83px;
+	//padding:10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 80px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #08689c;
+
+
+}
+
+#flex-container-4{
+
+	display: flex;
+	flex-direction: row;
+	//justify-content: 
+	//justify-content: center;
+	//align-items: center;
+	margin-top: 40px;
+	//height: 600px;
+}
+#flex-footer-1 {
+	background-color: rgba(8, 104, 156, 1);
+	width: 100%;
+	height: 40px;
+	padding:10px;
+	//padding-left: 10px;
+	//padding-right: 10px;
+	//margin-right: 80px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #e6edfb;
+
+
+}
+
+#flex-footer-1 > p {
+
+	font-size: 10px;
+	color: #e6edfb;
+	font-weight: bold;
+	text-align: center;
+	
+
+}
+
+
+
+
+
+
+
+
+#flex-container-1 {
+  height: 300px;
+}
+#flex-items-1 {
+  width: 300px;
+  height: 124px;
+}
+#flex-items-1 img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+#flex-container-2 {
+    display: block;
+  }
+#flex-items-3 > p a {
+  color: #e6edfb;
+}
+#flex-items-2, #flex-items-3 {
+  height: auto;
+}
+@media (min-width: 600px) {
+  #flex-items-1 {
+    width: 400px;
+    height: 166px;
+  }
+}
+@media (min-width: 1000px) {
+  #flex-container-1 {
+    height: 400px;
+  }
+  #flex-items-1 {
+    width: 600px;
+    height: 249px;
+  }
+  #flex-container-2 {
+    display: flex;
+  }
+  #flex-items-2, #flex-items-3 {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #flex-container-1 {
+    height: 600px;
+  }
+  #flex-items-1 {
+    width: 878px;
+    height: 364px;
+  }
+  #flex-items-2, #flex-items-3 {
+    height: 275px;
+  }
+}
+@media (min-width: 1400px) {
+  #flex-items-2, #flex-items-3 {
+    height: 250px;
+  }
+}
